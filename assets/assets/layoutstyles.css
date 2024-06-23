@@ -1,0 +1,97 @@
+body
+{
+    background-color: orange;
+}
+#wrapper{
+      border:1px solid blue;
+      width:1100px;
+      padding:10px;
+      margin:0px auto;
+      background-color: white;
+}
+
+#header{
+
+       background-image: url('../assets/images/banner.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       border:1px solid blue;
+
+       height: 150px;
+      
+
+}
+#header h1
+{
+      color:red;
+      text-align: center;
+      padding-top:20px;
+}
+
+#nav
+{
+    margin-top:10px;
+    background-image: url('../assets/images/navbar.png');
+      border:1px solid blue;
+      height:60px;
+      margin-bottom: 10px;
+}
+#nav ul {
+     padding-top:5px;       
+}
+#nav ul li{
+
+     display:inline;
+     margin-right:120px;
+     
+}
+#nav ul li a{
+
+    text-decoration: none;
+    background-color:orangered;
+    padding:10px 20px;
+    border-radius: 22px 2px;
+    color:white;
+    text-shadow: 2px 2px 12px black;
+
+}
+#nav ul li a:hover{
+
+     background-color: green;
+     color:red;
+}
+
+#content{
+
+     border:1px solid grey;
+     float:left;
+     width:810px;
+     padding:20px;
+}
+#content h2{
+      text-align: center;
+      color:brown;
+}
+#sidebar {
+
+     border:1px solid green;
+
+     width:230px;
+
+     height: 400px;
+     float:right;
+     margin-bottom: 10px;
+}
+
+#footer
+{
+    clear:both;
+    border:1px solid grey;
+    background-image: url('../assets/images/navbar.png');
+    height: 60px;
+}
+#footer p{
+    text-align:center;
+    color:red;
+    font-size:20px;
+}

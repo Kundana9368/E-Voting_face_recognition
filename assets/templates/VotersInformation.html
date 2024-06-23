@@ -1,0 +1,40 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block content %}
+<style>.image1{
+          background: url("{% static 'images\amp.jpg' %}");
+              background-size: 100% 100%;
+                width: 50px;
+    height: 50px;
+                margin-top: -99px;
+    float: right;
+} </style>
+<h1>College Voting President Elections</h1>
+<h2>Please Give your valuable vote {{name}} </h2>
+
+
+  
+  <form action="" method="POST" name="login">
+    {% csrf_token %}
+
+     <input type="hidden" name="username" value="{{name}}">
+
+     <p>Please select Your favourite candidate to vote</p>
+     <table border="1">
+
+     <tr><td><input type="radio" name="c1" value="president1"> president1</td> <td><img src="{% static 'assets/images/inp.jpg' %}" style="border-radius: 30px;float:left;margin-right: 20px;" height="150px" width="200px" alt=""> </td>  </tr>
+
+
+         <tr><td><input type="radio" name="c1" value="president2"> president2</td> <td> <img src="{% static 'assets/images/amp.jpg' %}" style="border-radius: 30px;float:left;margin-right: 20px;" height="150px" width="200px" alt="">  </td></tr>
+
+     </table>
+      <div class="image1"></div>
+<br>
+     <input type="submit" value="Submit Vote" name="photo" >
+  </form>
+   
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-voting</title>
+    <link rel="stylesheet" href="{% static 'assets/layoutstyles.css' %}" type="text/css">
+</head>
+<body>
+      <div id="wrapper">
+
+         <div id="header">
+
+            <h1>Evoting System</h1>
+         </div>
+       
+       
+       
+       
+       
+       
+       
+       
+         <div id="nav">
+<ul>
+        <li>
+            <a href="http://localhost:8000">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'about' %}">About</a>
+        </li>
+        <li>
+             <a href="{% url 'login' %}">Login</a>
+        </li>
+        <li>
+            <a href="{% url 'gallery' %}">Gallery</a>
+        </li>
+        <li>
+            <a href="{% url 'contact' %}">Contat</a>
+        </li>
+    </ul>
+         </div>
+         <div id="content">
+
+            {% block content %}
+    
+            {% endblock content %}
+            
+        </div>
+         <div id="sidebar">
+          
+            <iframe width="230" height="400" src="https://www.youtube.com/embed/p0yQ1JY9xNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+         <div id="footer">
+
+            <p>All Copyright@ reserved to Evoting System</p>
+         </div>
+
+      </div>
+</body>
+</html>
